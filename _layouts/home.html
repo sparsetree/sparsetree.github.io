@@ -1,41 +1,11 @@
 <!DOCTYPE html>
 <html>
-<!--
-====================================================
-    __  ____  ______________  _______ ___    __
-   / / / /  |/  / ____/   \ \/ / ___//   |  / /
-  / /_/ / /|_/ / /_  / /| |\  /\__ \/ /| | / /
- / __  / /  / / __/ / ___ |/ /___/ / ___ |/ /___
-/_/ /_/_/  /_/_/   /_/  |_/_//____/_/  |_/_____/
-
-====================================================
-Owner Name: Hossain Mohammad Faysal
-Profile: https://www.facebook.com/hmfaysal
-Version: 1.1
-Description: Awesome dude, awesome life
-====================================================
--->
 <head>
 {% include head.html %}
 </head>
 <body class="home-template" itemscope itemtype="http://schema.org/WebPage">
 <div id="fade"></div>
-<a id="slide" class="animated fade"></a>
-<aside id="sidebar">
-    <nav id="navigation">
-    <h2>MENU</h2>
-    <hr>
-{% for link in site.links %}
-            <li>{% if link.external %}
-                    <a href="{{ link.url }}">{{ link.title }}</a>
-                {% else %}
-                    <a href="{{ site.url }}{{ link.url }}">{{ link.title }}</a>
-                {% endif %} </li>
-{% endfor %}
-    </nav>
 
-
-</aside>
 {% if page.imagefeature %}<header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.url }}/images/{{ page.imagefeature }})" itemscope itemtype="http://schema.org/Organization">
 {% else %}
 <header id="masthead" class="blog-background overlay align-center align-middle animated from-bottom"  style="background-image: url({{ site.url }}/images/{{ site.default_bg }})" itemscope itemtype="http://schema.org/Organization">
