@@ -1,12 +1,13 @@
 ---
 layout: post
-title: First Commit
+title:
 description:
 headline: "Let's Fire up the Engines"
 categories: work
 comments: false
+tags: []
 mathjax: null
-featured: true
+featured: false
 published: true
 ---
 
