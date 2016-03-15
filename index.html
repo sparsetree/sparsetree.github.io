@@ -112,17 +112,6 @@ tags: [Sparse, Tree, django, python, website, development, programming, melbourn
                     {% else %}
 	                <p class="lead">{{ post.excerpt }}&hellip;</p>
 	                {% endif %}
-	                <div class="text-center">
-	                    {% if post.description %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> see more...
-		                </a>
-		                {% else %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> see more...
-		                </a>
-		                {% endif %}
-		            </div>
 	                </div>
 	            </article>
 	        </div>
@@ -147,17 +136,7 @@ tags: [Sparse, Tree, django, python, website, development, programming, melbourn
 	                </header>
 	                <div class="post-body bordered-bottom">
 	                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>
-	                    <div class="text-center">
-	                    {% if post.description %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> read more...
-		                </a>
-		                {% else %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> read more...
-		                </a>
-		                {% endif %}
-		                </div>
+
 	                </div>
 	            </article>
 	        </div>
@@ -184,17 +163,7 @@ tags: [Sparse, Tree, django, python, website, development, programming, melbourn
 	                {% assign excerptsize = post.excerpt | number_of_words %}
 	                {% if excerptsize <= 100 and excerptsize >= 50 %}<p class = "lead">{{ post.excerpt | strip_html }}&hellip;</p>{% else %}
 	                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
-	                    <div class="text-center">
-	                    {% if post.description %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> read more...
-		                </a>
-		                {% else %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> read more...
-		                </a>
-		                {% endif %}
-		                </div>
+
 	                </div>
 	            </article>
 	        </div>
@@ -322,17 +291,7 @@ tags: [Sparse, Tree, django, python, website, development, programming, melbourn
                     {% else %}
 	                <p class="lead">{{ post.excerpt }}&hellip;</p>
 	                {% endif %}
-	                <div class="text-center">
-	                    {% if post.description %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> see more...
-		                </a>
-		                {% else %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> see more...
-		                </a>
-		                {% endif %}
-		            </div>
+
 	                </div>
 	            </article>
 	        </div>
@@ -357,17 +316,7 @@ tags: [Sparse, Tree, django, python, website, development, programming, melbourn
 	                </header>
 	                <div class="post-body bordered-bottom">
 	                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>
-	                    <div class="text-center">
-	                    {% if post.description %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> read more...
-		                </a>
-		                {% else %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> read more...
-		                </a>
-		                {% endif %}
-		                </div>
+
 	                </div>
 	            </article>
 	        </div>
@@ -394,17 +343,7 @@ tags: [Sparse, Tree, django, python, website, development, programming, melbourn
 	                {% assign excerptsize = post.excerpt | number_of_words %}
 	                {% if excerptsize <= 100 and excerptsize >= 50 %}<p class = "lead">{{ post.excerpt | strip_html }}&hellip;</p>{% else %}
 	                    <p>{{ post.content | strip_html | truncatewords:100 }}&hellip;</p>{% endif %}
-	                    <div class="text-center">
-	                    {% if post.description %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="{{ post.description }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> read more...
-		                </a>
-		                {% else %}
-		                <a href="{{ site.url }}{{ post.url }}" data-toggle="tooltip" title="Read more about {{ post.title }}" class="more-link btn btn-danger btn-large">
-		                    <i class="icon-link"></i> read more...
-		                </a>
-		                {% endif %}
-		                </div>
+
 	                </div>
 	            </article>
 	        </div>
